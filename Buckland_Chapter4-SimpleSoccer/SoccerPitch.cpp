@@ -13,7 +13,7 @@
 #include "misc/FrameCounter.h"
 
 const int NumRegionsHorizontal = 6; 
-const int NumRegionsVertical   = 3;
+const int NumRegionsVertical   = 7;
 
 //------------------------------- ctor -----------------------------------
 //------------------------------------------------------------------------
@@ -151,8 +151,8 @@ void SoccerPitch::CreateRegions(double width, double height)
 bool SoccerPitch::Render()
 {
   //draw the grass
-  gdi->DarkGreenPen();
-  gdi->DarkGreenBrush();
+  gdi->DarkRedPen();
+  gdi->DarkRedBrush();
   gdi->Rect(0,0,m_cxClient, m_cyClient);
 
   //render regions
